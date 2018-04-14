@@ -1,12 +1,19 @@
-Package.json-
 {
-"name":"project_name",
+  "name": "workspace",
   "version": "1.0.0",
-  "description":"this will render the HTML webpages.",
-  "script":{
-    "start": "harp server --port $PORT"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "harp":"*"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/student1rkgec/Foundaion_Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/student1rkgec/Foundaion_Practice/issues"
+  },
+  "homepage": "https://github.com/student1rkgec/Foundaion_Practice#readme"
 }
