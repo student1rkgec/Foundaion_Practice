@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    
+</head>
+<body ng-app ng-init="checked=true" >
+    Click Me: <input type="checkbox" ng-model="checked" /> <br/><br />
+    <div>
+        New: <input ng-if="checked" type="text" /><br/><br/>
+    </div>
+    <div>
+        Read-only: <input ng-readonly="checked" type="text" value="This is read-only." /><br/><br/>
+    </div>
+    <div>
+        Disabled: <input ng-disabled="checked" type="text" value="This is disabled." /><br/><br/>
+    </div>
+</body>
+</html>
