@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {border:2px solid blue;}
+    </style>
+  </head>
+   <body ng-app="filterExample" ng-controller="filterCtrl">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>     
+     <h3>Angular Filter Examples:</h3>
+     
+     <h4>Angular JS Filter : Lowercase | Uppercase</h4>
+         <div>
+           This is My Name in Lowercase : {{name | lowercase}}<br>
+           This is My Name in uppercase : {{name | uppercase}}
+         </div>
+     <h4>Angular JS Filter Example : Number</h4>
+         <div>
+           This is my Id = {{id | number:2}}
+         </div>
+     <h4>Angular JS Filter : JSON</h4>
+         <div>
+           Your Details:<br> 
+           This is JSON = {{detail | json}}
+         </div>
+     <h4>Angular JS Filter Example : Currency</h4>
+         <div>
+           This is Price : {{price | currency}}
+         </div>
+     <script type="text/javascript">
+     var app = angular.module('filterExample',[]);
+       app.controller('filterCtrl', function($scope){
+         $scope.name = "Diyswim";
+         $scope.id = 3.54254325;
+         $scope.price = 254.25442;
+         $scope.detail = { Id : 12 , Name : "Diyswim"}
+       });
+     </script>
+  </body>
+</html>

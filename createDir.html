@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+  
+<h1> Here your Directive</h1>
+
+<div ng-app="DemoApp">
+    
+  <mydiv> </mydiv>
+
+</div>
+
+<script type="text/javascript">
+    var app = angular.module('DemoApp',[]);
+    
+     app.directive('mydiv',function(){
+
+     return {
+        template: '<h3>Angular JS Tutorial<h3>'
+    }
+    });
+
+</script>
+
+</body>
+</html>

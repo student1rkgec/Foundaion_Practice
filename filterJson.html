@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <body>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <h2> Custom Filter Example : </h2>
+      <div ng-app="CFilterApp" ng-controller="CFCtrl">
+          This is Your Name : {{name | CFilter}}
+       </div>
+     
+    <script type="text/javascript">
+      var app = angular.module('CFilterApp',[]);
+        app.filter('CFilter', function(){
+
+        return function(input) 
+        {
+          return input + ".net"
+        }
+    });
+      app.controller('CFCtrl', function($scope){
+        $scope.name = "Diyswim";
+      });
+</script>
+
+</body>
+</html>

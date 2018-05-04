@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {border:2px solid blue;}
+    </style>
+  </head>
+   <body ng-app="">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     
+     <h3>Expression Example:</h3>
+     
+     <h4>Angular JS Numbers</h4>
+         <div ng-init="num1=10; num2=5">
+           Sum of Numbers= {{num1 + num2}}
+         </div>
+     <h4>Angular JS Strings</h4>
+         <div ng-init="firstName='Diyswim'; lastName='.Net'">
+           Your First Name : {{firstName}}<br>
+           Your Last Name  : {{lastName}}
+         </div>
+     <h4>Angular JS Objects</h4>
+         <div ng-init="person = {name:'Ajay', salary:50000}">
+           Your Details:<br> 
+           Name : {{person.name}}<br>
+           Salary: {{person.salary}}
+         </div>
+     <h4>Angular JS Array</h4>
+         <div ng-init="subject=['HTML', 'CSS', 'JavaScript']">
+           Our Foundation Subjects:<br>
+           Subject1: {{subject[0]}}<br>
+           Subject2: {{subject[1]}}<br>
+           Subject3: {{subject[2]}}<br>
+         </div>
+     
+  </body>
+</html>
